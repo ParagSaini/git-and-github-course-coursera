@@ -1,0 +1,58 @@
+VCS - version control system: 
+	It keeps track the changes with we make to our files.
+	It also tracks the information about how made the changes, when, what changes did they make.
+	We can also easily revert the changes to some point back.
+	Also good for collaborative tasks.
+	It basically a file managing system, which not only stores the latest files but also the earlier ones.
+
+	Although we can track any format files by VCS like txt, jpg, videos, but it wouldn't be easier for checking difference between two files in many formats like vides, jpg. So txt files are great to track using the VCS. 
+	There are many popular VCS available, like Subversion, mercurian but the most popular is Git.
+
+
+GIT
+	
+git config --global user.email "me@example.com"  # for setting the user email address, --global for setting this email for all repositories, we can choose --local for setting to single repositories.
+git config --global user.name "My name"    # for setting user name.
+git config --list    # to get information about repository
+
+git init   # for initialisating the git directory.
+
+working tree - the area outside the git directory is our working tree, git directory holds the information about the history of our files, where as working tree only contains the current version of files.
+
+Staging Area - A file maintained by the Git	that contains all the information about what files and changes are going to go into your next commit.
+
+git add file_name   # to add file into staging area.
+git status   # to view our working tree, pending changes and modification
+git commit  # command to commit our changes to git directory.
+git commit -m "your message"    # for useful way to use git commit, message can't be empty.
+
+Git works in tree parts
+	working tree - current version of our files
+	Staging Area - files that are going to commit in our next commit
+	Git directory - stores the history of all commits that we have made till now.
+
+	NOTE: DO NOT MAKE MULTIPLE GIT DIRECTORY IN SINGLE REPOSITORY, MAKE ONLY ONE GIT DIRECTORY FOR SINGLE REPO.
+
+
+COMMIT MESSAGES:
+	generally Companies have their own set of instruction for how to write the commit messages, but if not, there are some general ways to write a good commit message.
+	1. A short description of the change (up to 50 characters), followed by one or more paragraphs giving more details of the change (if needed). We can include the links also in description for better commit messages.
+
+git log   # for showing the history of commits.
+
+
+
+------------------------------WEEK 2 ---------------------------------
+
+Skipping the staging Area:
+	1. we can use the git commit -a -m "commit message" for skipping the staging area and directly commit the changes for tracked files. it doesn't include the changes in untracked fils.
+	2. -a flag do not include untracked files, for untracked files first we need to track them by git add , then we can use the git commit -a -m "message" for commit the changes.
+	3. while writing the git commit -m "short message"  # we can only write the short message by using this command, for better long commit messages we have to use git commit, and then write complete message in editor itself.
+
+	HEAD - is basically a pointer to currently checkout snapshot.
+
+
+
+
+
+
