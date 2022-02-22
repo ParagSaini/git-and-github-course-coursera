@@ -2,3 +2,4 @@ Hello this is my first commit
 skipping the staging area
 Adding some more txt
 adding som etxt
+fsfasd
