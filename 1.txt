@@ -1,9 +1,5 @@
 Hello this is my first commit
 skipping the staging area
-<<<<<<< HEAD
 Adding some more txt
 adding som etxt
 fsfasd
-=======
-Adding some more txt
->>>>>>> parent of e846b14 (added some txt in 1.txt)
