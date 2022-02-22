@@ -88,5 +88,3 @@ UNDOING CHANGES:
  ROLLBACKS: How to revert the changes, that we have already commited
 
  	1. git revert HEAD      # This will inverse all the changes that were done in last commit, and create another commit. We can see both the commits in our git log command.
-
-
