@@ -22,6 +22,7 @@ working tree - the area outside the git directory is our working tree, git direc
 Staging Area - A file maintained by the Git	that contains all the information about what files and changes are going to go into your next commit.
 
 git add file_name   # to add file into staging area.
+git add *       # for add all files to the staging area.
 git status   # to view our working tree, pending changes and modification
 git commit  # command to commit our changes to git directory.
 git commit -m "your message"    # for useful way to use git commit, message can't be empty.
@@ -52,7 +53,34 @@ Skipping the staging Area:
 	HEAD - is basically a pointer to currently checkout snapshot.
 
 
+git log -p   # -p flag for showing the commits with all changes (like line by line, showing what are the newly lines added, deleted etc) you have made in that commit.
+
+git show commit_id   # for showing the specific commit 
+
+git log --stat    # showing the commits with informations like which files were changed, how many lines were added, deleted.
+
+git diff    # for showing the changes we have made in unstaged files.
+git diff file_name   # for specifically showing the changes for given file.
+
+git diff --staged   # for showing the changes in the files in our staging area
+
+git diff --staged file_name    #  for specifically showing the changes for given file which is in the staging area.
+
+git add -p    # for staging the files, with showing the what changes we have made in the files. 
+
+git rm file_name   # for deleting the specific file, we no longer need. Don't forget to commit these changes and add message also
+
+git mv old_file_name new_file_name   # for renaming the file, followed by git commit 
 
 
+.gitignore  # this files contains the files that we don't to track by git.
+	1. add the file name with extension which we don't want to track.
+	2. use *.extension for untracking all the files with given .extension.
 
+UNDOING CHANGES:
+	There is confusion between checkout, restore, reset, etc, view this later.
+	1. git restore file_name   or git checkout file_name # it works on working directory, it will change the file as it was in latest commit.   
+	2. git restore --staged file_name   or git reset HEAD file_name  # to unstage our changes.
+ 
+ 	3. git commit --amend   # to overwrite the previous commit, suppose you want to commit to two file changes but by mistake you only commit one file, so for this situation we can overwrite the previous commit by using this command, whatEver will be in my staging area will get commit by this command.
 
