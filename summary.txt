@@ -54,7 +54,6 @@ Skipping the staging Area:
 
 
 git log -p   # -p flag for showing the commits with all changes (like line by line, showing what are the newly lines added, deleted etc) you have made in that commit.
-git log -2 # for showing only last 2 commits.
 
 git show commit_id   # for showing the specific commit 
 
@@ -83,10 +82,5 @@ UNDOING CHANGES:
 	1. git restore file_name   or git checkout file_name # it works on working directory, it will change the file as it was in latest commit.   
 	2. git restore --staged file_name   or git reset HEAD file_name  # to unstage our changes.
  
- 	3. git commit --amend   # to overwrite the previous commit, suppose you want to commit to two file changes but by mistake you only commit one file, so for this situation we can overwrite the previous commit by using this command, whatEver will be in my staging area will get commit by this command. You should avoid this command when working with a public or shared Repo, because it may cause some confusion for other contributors.
-
- ROLLBACKS: How to revert the changes, that we have already commited
-
- 	1. git revert HEAD      # This will inverse all the changes that were done in last commit, and create another commit. We can see both the commits in our git log command.
-
+ 	3. git commit --amend   # to overwrite the previous commit, suppose you want to commit to two file changes but by mistake you only commit one file, so for this situation we can overwrite the previous commit by using this command, whatEver will be in my staging area will get commit by this command.
 
