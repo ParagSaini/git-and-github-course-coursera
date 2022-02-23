@@ -4,3 +4,5 @@ Adding some more txt
 adding som etxt
 fadfadfj fadfamy hane is khan
 fadfa my name is
+This line is in new-feature
+added some line in newfeature
