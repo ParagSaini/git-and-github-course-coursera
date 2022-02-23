@@ -95,10 +95,14 @@ UNDOING CHANGES:
 
 
  BRANCHES AND MERGING:
- 	BRANCHES -  A pointer to a particular commit. The default branch that git creates for you when you intialized a git repository is called the MASTER or MAIN branch. Branches are super useful to experiment with new features without affecting the current working state of our project. After successful experiment we can merge the branches with master to deploy our changes in master branch.
+ 	BRANCHES -  A pointer to a particular commit. Basically branch is the series of commits, where latest commit in that branch represent the branch. Try to make diagram of various commits to visualise it. The default branch that git creates for you when you intialized a git repository is called the MASTER or MAIN branch. Branches are super useful to experiment with new features without affecting the current working state of our project. After successful experiment we can merge the branches with master to deploy our changes in master branch.
 
  	1. creating new Branche is just like taking a snapshot.
  	2. git branch    # to list all the branches. * shows the current branch we are on right now. 
  	3. git branch branch_name   # for creating the new branch.
  	4. git checkout branch_name     # to go to the given branch_name
  	5. git checkout -b branch_name    # for creating a new branch and switching it to.
+ 	6. git merge branch_name     	# mergint the given branch_name to current headed branch.
+
+ 	MERGE CONFLICTS:
+ 		1. Normally git automatically merges our files on merge command, but if the same part of the same file is changed in two different branches, then git got confused how to merge those changes, this make rise to Merge conflicts.
