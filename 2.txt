@@ -2,3 +2,5 @@ This is my new file
 some more changes
 one more changes
 my name is khan
+
+hello sain in newfeature
