@@ -103,6 +103,7 @@ UNDOING CHANGES:
  	4. git checkout branch_name     # to go to the given branch_name
  	5. git checkout -b branch_name    # for creating a new branch and switching it to.
  	6. git merge branch_name     	# mergint the given branch_name to current headed branch.
+ 	7. git branch -d branch_name   # to delete the branch.
 
  	MERGE CONFLICTS:
  		1. Normally git automatically merges our files on merge command, but if the same part of the same file is changed in two different branches, then git got confused how to merge those changes, this make rise to Merge conflicts.
